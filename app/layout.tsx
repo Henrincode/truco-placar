@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${poppins.className} ${poppins.variable} ${sancreek.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased overscroll-contai`}
+      className={`${poppins.className} ${poppins.variable} ${sancreek.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased overscroll-contain`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
