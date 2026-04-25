@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Poppins, Sancreek } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
+  variable: "--font-poppins",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
 })
 
@@ -34,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${poppins.className} ${sancreek.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${poppins.className} ${poppins.variable} ${sancreek.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased overscroll-contai`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
